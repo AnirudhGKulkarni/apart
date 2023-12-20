@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        body
+         {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(0, 0, 0);
+        }
+            
+        header {
+            background-color: #000000;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+            .emoji-button {
+            font-size: 24px;
+            cursor: pointer;
+            padding: 10px;
+            background-color: transparent;
+            color: aqua;
+            border: none;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+            width: 50px;                  
+            justify-content: flex-start; /* Align items to the start (top) of the container */
+            align-items: flex-start;      
+        }
+
+        .emoji-button:hover {
+            background-color: aqua;
+        }
+
+        #imageInput {
+            display: none;
+        }
+
+        #uploadButton {
+            font-size: 24px;
+            cursor: pointer;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0);
+            color: aqua;
+            border: none;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+            position: relative;
+            
+
+        }
+
+        #uploadButton:hover {
+            background-color: aqua;
+                }
+                #slider-container {
+            overflow: hidden;
+            width: 100%;
+        }
+
+        #sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #f6afdf;
+    z-index: 2;
+    transition: 0.5s;
+} 
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li{
+    text-decoration: none;
+    color: #fff;
+}    
+    </style>
+    <title>BHUVAN</title>
+  </head>
+  <body>
+    <section>
+    
+    <div id="overlay"></div>
+    <div id="mobile-menu" class="mobile-main-menu">
+      <ul>
+        <li><a href="#">NAVIGATE 🧭</a></li>
+        <li><a href="#">MARK MY PLACE 🏷️</a></li>
+        <li><a href="#">2D TO 3D :) -🤓</a></li>
+        <li><a href="#">MEDICAL 💊</a></li>
+        <li><a href="#">BAR & RESTO 🍻🍽️</a></li>
+        <li><a href="#">NEAR BY ⛩️</a></li>
+        <li><a href="#">MUSEUMS 🏦</a></li>
+        <li><a href="#">ATMS 🏧</a></li>
+        <li><a href="#">HOSPITAL 🏥</a></li>
+    </div>
+    <header class="main-header">
+      <div class="logo">
+        <a href="/">
+          <img src="isro.png"  alt="ISRO" />
+        
+        </a>
+      </div>
+      <div>
+        <a href="/">
+            <img src="bhuvan globe.jpg" height="80" width="90">
+        </a>
+      </div>
+      <nav>
+          
+          
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+            
+        
+        <button class="emoji-button" onclick="handleButtonClick()">🔍</button>
+        <script>
+            function handleButtonClick() {
+                alert("Button clicked!");
+                // You can add more JavaScript logic here if needed
+            }
+        </script>
+    
+        <input type="file" id="imageInput" accept="image/*" onchange="displayImage(this)">
+        <button id="uploadButton" onclick="document.getElementById('imageInput').click()">🖼️</button>
+        
+    
+        <script>
+            function displayImage(input) {
+                    const uploadButton = document.getElementById('uploadButton');
+    
+                if (input.files && input.files[0]) {
+                    const reader = new FileReader();
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+        </script>
+        
+        
+        <button class="emoji-button" onclick="handleButtonClick()">🎙️</button>
+        <script>
+            function handleButtonClick() {
+                alert("Button clicked!");
+                // You can add more JavaScript logic here if needed
+            }
+        </script>
+        </div>
+      </nav>
+         </header>
+
+    <!-- Hamburger Menu -->
+    <button id="menu-btn" class="hamburger" type="button">
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
+    </button>
+
+    <!-- Bhuvan -->
+    <section class="section-animate bg-dragon"></section>
+    <div class="section-inner-center">
+      <h3>BHUVAN</h3>
+    </div>
+
+    <div class="scroll-arrow">
+        <svg width="30px" height="20px">
+          <path
+            stroke="#ffffff"
+            fill="none"
+            stroke-width="2px"
+            d="M2.000,5.000 L15.000,18.000 L28.000,5.000 "
+          ></path>
+        </svg>
+      </div>
+
+    <section class="display"> 
+        <p>
+
+            <img src="https://etimg.etb2bimg.com/photo/85046466.cms" width="2040" height="1080" alt="">
+            <div class="section-inner-center1">
+                <h2>NAVIGATE</h2>
+              </div>
+
+              <div class="scroll-arrow">
+                <svg width="30px" height="20px">
+                  <path
+                    stroke="#ffffff"
+                    fill="none"
+                    stroke-width="2px"
+                    d="M2.000,5.000 L15.000,18.000 L28.000,5.000 "
+                  ></path>
+                </svg>
+              </div>
+        </p>
+        <p>
+           
+
+              
+            <img src="https://assets.ey.com/content/dam/ey-sites/ey-com/en_in/topics/aerospace-defense/ey-satelite-network.jpg" width="2040" height="1080" alt="">
+            
+        </p>
+       
+    </section>
+    <section>
+        
+<p><pre>
+          <div class="scroll-arrow">
+            <svg width="90px" height="100px">
+              <path
+                stroke="#ffffff"
+                fill="none"
+                stroke-width="4px"
+                d="M2.000,5.000 L15.000,18.000 L28.000,5.000 "
+              ></path>
+            </svg>
+          </div>
+        </pre>
+
+        <div class="section-inner-center1">
+            <pre>
+
+
+
+
+
+
+
+
+
+
+                
+                <h2> <hr>NAVIC <hr></h2>
+            </pre>
+          </div>
+    </p>
+       </section>
+<section class="map"> </section>
+    <p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30773372.380620293!2d61.02452930232927!3d19.69067874516688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1703073079111!5m2!1sen!2sin" width="2040" height="2340" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </p>
+</section>
+
+      </body>
+</html>
